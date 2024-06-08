@@ -1,0 +1,35 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DB_URL")
+}
+
+generator client {
+  provider = "prisma-client-py"
+  recursive_type_depth = 5
+}
+
+enum engine {
+  hmm
+  tacotron2_melgan
+  tacotron2_mb_melgan
+  fastspeech2_melgan
+  fastspeech2_mb_melgan
+}
+
+enum MOS {
+  bad
+  poor
+  fair
+  good
+  excellent
+}
+
+model Evaluation {
+  id                Int      @id @default(autoincrement())
+  engine            engine
+  text              String
+  comprehensibility MOS
+  naturalness       MOS
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+}

@@ -1,0 +1,7 @@
+# Postgres data
+postgres-data/
+# secret env
+.env
+# generated files
+core/tts_engines/hmm_viterbi_engine/generated_speech
+
