@@ -43,7 +43,7 @@ class _AppWrapperState extends State<AppWrapper> {
                 color: Theme.of(context).colorScheme.primary.withOpacity(0.1),
               ),
               child: Text(
-                'Text to Speech App \n Smart Assistant',
+                'Welcome to Text and Speech App!',
                 style: Theme.of(context).textTheme.bodyLarge,
               ),
             ),
