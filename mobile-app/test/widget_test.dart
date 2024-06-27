@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:smart_assistant/app/smart_voice_assistant_app.dart';
+import 'package:smart_assistant/app/text_and_speech_app.dart';
+import 'package:smart_assistant/core/routing/app_router.dart';
 
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
     // Build our app and trigger a frame.
-    await tester.pumpWidget(const SmartVoiceAssistantApp());
+    await tester.pumpWidget(TextAndSpeechApp(appRouter: AppRouter()));
 
     // Verify that our counter starts at 0.
     expect(find.text('0'), findsOneWidget);
