@@ -6,6 +6,10 @@ This pull request includes the following changes:
 
 ## Screenshots
 
+| Before                                | After                                 |
+| ------------------------------------- | ------------------------------------- |
+| <img src="" width="100" height="250"> | <img src="" width="100" height="250"> |
+
 ## Type of Change
 
 - [ ] ✨ New feature (non-breaking change which adds functionality)
