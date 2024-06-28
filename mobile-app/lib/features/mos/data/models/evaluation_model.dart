@@ -1,5 +1,5 @@
-import 'package:smart_assistant/core/enums/mos.dart';
-import 'package:smart_assistant/core/enums/tts_engines.dart';
+import '../../../../core/enums/mos.dart';
+import '../../../../core/enums/tts_engines.dart';
 
 class EvaluationModel {
   final TTSEngine engine;

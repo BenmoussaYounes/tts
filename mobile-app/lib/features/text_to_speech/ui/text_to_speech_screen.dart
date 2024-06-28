@@ -1,9 +1,10 @@
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:smart_assistant/core/enums/tts_engines.dart';
-import 'package:smart_assistant/features/text_to_speech/logic/cubit/text_to_speech_cubit.dart';
-import 'package:smart_assistant/features/text_to_speech/ui/widgets/text_to_speech_field.dart';
+
+import '../../../core/enums/tts_engines.dart';
+import '../logic/cubit/text_to_speech_cubit.dart';
+import 'widgets/text_to_speech_field.dart';
 
 class TextToSpeechScreen extends StatefulWidget {
   const TextToSpeechScreen({super.key});
@@ -81,7 +82,7 @@ class _TextToSpeechScreenState extends State<TextToSpeechScreen> {
                             // DropdownMenuItem(
                             //   value: TTSEngine.fastspeech2MbMelgan,
                             //   child: Text('FastSpeech2-MB-MelGAN'),
-                           // ),
+                            // ),
                             // DropdownMenuItem(
                             //   value: TTSEngine.tacotron,
                             //   child: Text('Tacotron 2'),

@@ -1,12 +1,12 @@
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:smart_assistant/core/enums/mos.dart';
-import 'package:smart_assistant/core/enums/tts_engines.dart';
-import 'package:smart_assistant/core/widgets/primary_button.dart';
 
+import '../../../core/enums/mos.dart';
+import '../../../core/enums/tts_engines.dart';
 import '../../../core/helpers/path_strings/app_sounds.dart';
 import '../../../core/widgets/audio_player/player.dart';
+import '../../../core/widgets/primary_button.dart';
 import '../logic/cubit/mos_cubit.dart';
 
 class StepTwo extends StatefulWidget {
