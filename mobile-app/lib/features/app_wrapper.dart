@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:smart_assistant/core/routing/routes.dart';
-import 'package:smart_assistant/features/speech_to_text/ui/speech_to_text.dart';
-import 'package:smart_assistant/features/text_to_speech/logic/cubit/text_to_speech_cubit.dart';
-import 'package:smart_assistant/features/text_to_speech/ui/text_to_speech_screen.dart';
 
 import '../core/helpers/path_strings/app_icons.dart';
+import '../core/routing/routes.dart';
 import 'speech_to_text/logic/cubit/speech_to_text_cubit.dart';
+import 'speech_to_text/ui/speech_to_text.dart';
+import 'text_to_speech/logic/cubit/text_to_speech_cubit.dart';
+import 'text_to_speech/ui/text_to_speech_screen.dart';
 
 class AppWrapper extends StatefulWidget {
   const AppWrapper({super.key});

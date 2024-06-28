@@ -1,12 +1,12 @@
 import 'package:bloc/bloc.dart';
 import 'package:flutter/material.dart';
-import 'package:smart_assistant/core/widgets/snack_bars.dart';
-import 'package:smart_assistant/features/mos/data/datasource/mos_remote_datasource.dart';
-import 'package:smart_assistant/features/mos/data/models/evaluation_model.dart';
 
 import '../../../../core/enums/mos.dart';
 import '../../../../core/enums/tts_engines.dart';
 import '../../../../core/routing/routes.dart';
+import '../../../../core/widgets/snack_bars.dart';
+import '../../data/datasource/mos_remote_datasource.dart';
+import '../../data/models/evaluation_model.dart';
 
 part 'mos_state.dart';
 

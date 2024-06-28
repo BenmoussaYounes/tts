@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:smart_assistant/core/enums/tts_engines.dart';
-import 'package:smart_assistant/core/widgets/primary_button.dart';
-import 'package:smart_assistant/features/mos/logic/cubit/mos_cubit.dart';
+
+import '../../../core/enums/tts_engines.dart';
+import '../../../core/widgets/primary_button.dart';
+import '../logic/cubit/mos_cubit.dart';
 
 class MOSScreen extends StatefulWidget {
   const MOSScreen({super.key});

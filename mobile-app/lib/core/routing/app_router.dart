@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:smart_assistant/features/app_wrapper.dart';
-import 'package:smart_assistant/features/mos/ui/step_one.dart';
 
+import '../../features/app_wrapper.dart';
 import '../../features/mos/ui/mos_screen.dart';
+import '../../features/mos/ui/step_one.dart';
 import '../../features/mos/ui/step_two.dart';
 import '../enums/tts_engines.dart';
 
