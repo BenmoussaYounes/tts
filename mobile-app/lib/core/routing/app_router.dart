@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:smart_assistant/features/app_wrapper.dart';
-import 'package:smart_assistant/features/mos/ui/step_one.dart';
+import 'package:text_and_speech/core/routing/routes.dart';
 
-import '../../features/mos/ui/mos_screen.dart';
-import '../../features/mos/ui/step_two.dart';
-import '../enums/tts_engines.dart';
+import '../../features/app_wrapper/ui/app_wrapper_screen.dart';
+
+import '../../features/text_to_speech_evaluation/ui/screens/intelligibility_evaluation_screen.dart';
+import '../../features/text_to_speech_evaluation/ui/screens/comprehensibility_and_naturalness_evaluation_screen.dart';
+import '../enums/tts_engines_enums.dart';
 
 class AppRouter {
   Route generateRoute(RouteSettings settings) {
@@ -14,14 +15,14 @@ class AppRouter {
     switch (settings.name) {
       case '/':
         return MaterialPageRoute(builder: (_) => const AppWrapper());
-      case 'mos':
-        return MaterialPageRoute(builder: (_) => const MOSScreen());
-      case 'mos/step_one':
+      case Routes.intelligibilityEvaluationScreen:
         return MaterialPageRoute(
-            builder: (_) => StepOne(settings.arguments as TTSEngine));
-      case 'mos/step_two':
+            builder: (_) => IntelligibilityEvaluationScreen(
+                settings.arguments as TTSEngine));
+      case Routes.comprehensibilityNaturalnessEvaluationScreen:
         return MaterialPageRoute(
-            builder: (_) => StepTwo(settings.arguments as (TTSEngine, String)));
+            builder: (_) => ComprehensibilityAndNaturalnessEvaluationScreen(
+                settings.arguments as (TTSEngine, String)));
 
       default:
         return MaterialPageRoute(

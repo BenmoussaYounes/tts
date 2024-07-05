@@ -2,8 +2,8 @@ import 'dart:typed_data';
 
 import 'package:dartz/dartz.dart';
 import 'package:dio/dio.dart';
-import 'package:smart_assistant/core/enums/tts_engines.dart';
 
+import '../../../../core/enums/tts_engines_enums.dart';
 import '../../../../core/networking/api_constants.dart';
 import '../../../../core/networking/api_error_model.dart';
 

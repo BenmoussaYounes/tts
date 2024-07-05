@@ -1,8 +1,8 @@
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:smart_assistant/core/enums/tts_engines.dart';
 
+import '../../../../core/enums/tts_engines_enums.dart';
 import '../../logic/cubit/text_to_speech_cubit.dart';
 
 class TextToSpeechField extends StatefulWidget {

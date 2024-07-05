@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:smart_assistant/app/text_and_speech_app.dart';
-import 'package:smart_assistant/core/routing/app_router.dart';
+
+import '../lib/app/text_and_speech_app.dart';
+import '../lib/core/routing/app_router.dart';
 
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {

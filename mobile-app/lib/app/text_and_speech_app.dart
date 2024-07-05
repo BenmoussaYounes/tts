@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:smart_assistant/core/routing/app_router.dart';
-import 'package:smart_assistant/core/routing/routes.dart';
-import 'package:smart_assistant/core/theming/theme.dart';
+import 'package:text_and_speech/features/app_wrapper/logic/cubit/app_wrapper_cubit.dart';
 
-import '../features/mos/logic/cubit/mos_cubit.dart';
+import '../core/routing/app_router.dart';
+import '../core/routing/routes.dart';
+import '../core/theming/theme.dart';
+import '../features/text_to_speech_evaluation/logic/cubit/mos_cubit.dart';
 
 class TextAndSpeechApp extends StatelessWidget {
   final AppRouter appRouter;
@@ -13,7 +14,10 @@ class TextAndSpeechApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MultiBlocProvider(
-      providers: [BlocProvider(create: (context) => MosCubit())],
+      providers: [
+        BlocProvider(create: (context) => MosCubit()),
+        BlocProvider(create: (_) => AppWrapperCubit())
+      ],
       child: MaterialApp(
         title: 'TextAndSpeech',
         debugShowCheckedModeBanner: false,
