@@ -3,7 +3,7 @@ import 'dart:typed_data';
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../../../../core/enums/tts_engines.dart';
+import '../../../../core/enums/tts_engines_enums.dart';
 import '../../data/datasource/text_to_speech_remote_data_source.dart';
 
 part 'text_to_speech_state.dart';
