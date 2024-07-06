@@ -52,8 +52,6 @@ dev_dependencies:
 # <div align="center"> Server Application 🚀 </div>
 
 ## AI Model 🔮 HMM Viterbi Model 🔮
-- ## 🔮 AI Model: HMM Viterbi Model 🔮
-
 **A Concatenative Speech Synthesis Model**: Our text-to-speech model utilizes a Hidden Markov Model (HMM) and the Viterbi Algorithm to generate natural-sounding speech from text input.
 
 <br>
