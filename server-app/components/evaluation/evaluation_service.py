@@ -5,7 +5,7 @@ from components.evaluation.evaluation_model import EvaluationModel
 async def save_evaluation(evaluation: EvaluationModel) -> EvaluationModel:
     try:
         db = Prisma()
-        await db.connect()    
+        await db.connect()
         data = {
             "text": evaluation.text,
             "engine": evaluation.engine.value,
@@ -17,4 +17,3 @@ async def save_evaluation(evaluation: EvaluationModel) -> EvaluationModel:
     except Exception as e:
         print(e)
         return None
-    
