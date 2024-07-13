@@ -10,10 +10,6 @@ generator client {
 
 enum engine {
   hmm
-  tacotron2_melgan
-  tacotron2_mb_melgan
-  fastspeech2_melgan
-  fastspeech2_mb_melgan
 }
 
 enum MOS {

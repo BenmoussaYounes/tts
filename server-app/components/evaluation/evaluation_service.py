@@ -12,7 +12,6 @@ async def save_evaluation(evaluation: EvaluationModel) -> EvaluationModel:
             "naturalness": evaluation.naturalness.value,
             "comprehensibility": evaluation.comprehensibility.value,
         }
-        print("DATA",data)
         await db.evaluation.create(data=data)
         return evaluation
     except Exception as e:
