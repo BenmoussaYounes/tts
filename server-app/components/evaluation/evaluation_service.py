@@ -1,5 +1,5 @@
-from prisma import Prisma
 from components.evaluation.evaluation_model import EvaluationModel
+from prisma import Prisma
 
 
 async def save_evaluation(evaluation: EvaluationModel) -> EvaluationModel:
