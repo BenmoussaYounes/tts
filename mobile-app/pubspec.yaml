@@ -38,7 +38,7 @@ dependencies:
   # Flutter plugin to play multiple audio files simultaneously
   audioplayers: ^6.0.0
   # Bloc state management package
-  flutter_bloc: ^8.1.5
+  flutter_bloc: ^8.1.6
   # Object Equality
   equatable: ^2.0.5
   # Functional programming
